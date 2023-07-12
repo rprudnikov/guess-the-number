@@ -13,8 +13,15 @@ target_number = random.randint(0, 60)
 
 while True:
     print(" ")
-    user_input = int(input("Введіть позитивне число: "))
-    result = user_input - target_number
+    while True:
+        user_input = input("Введіть позитивне число: ")
+        try:
+            int(user_input)
+        except ValueError:
+            print("Не число бачу я;)")
+        else:
+            break
+    result = int(user_input) - target_number
     if user_input == target_number:
         print("Ви вгадали!")
         break
