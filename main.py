@@ -25,6 +25,3 @@ while True:
         print("Тепло")
     if abs(result) <= 5:
         print("Гаряче")
-
-
-
