@@ -13,6 +13,7 @@ target_number = random.randint(0, 60)
 
 while True:
     print(" ")
+
     while True:
         user_input = input("Введіть позитивне число: ")
         try:
@@ -22,7 +23,8 @@ while True:
         else:
             break
     result = int(user_input) - target_number
-    if user_input == target_number:
+
+    if result == 0:
         print("Ви вгадали!")
         break
     if abs(result) >= 11:
@@ -31,5 +33,5 @@ while True:
         print("Тепло")
     if abs(result) <= 5:
         print("Гаряче")
-input("Натисніть Enter для виходу")
+input("Натисніть Enter для входу")
 sys.exit()
