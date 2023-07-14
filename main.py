@@ -19,7 +19,7 @@ while True:
         try:
             int(user_input)
         except ValueError:
-            print("Не число бачу я😉")
+            print("Не число бачу я;)")
         else:
             break
     result = int(user_input) - target_number
